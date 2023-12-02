@@ -51,4 +51,9 @@ The highest average price for homes in the selected price range has group with v
 
 ## Conclusion
 
+The fastest query runtime was achieved after caching the table - 0.42 seconds.
+Runtime for uncached table showed 1.03 seconds.
+
+Partitioning and parquet-formatting approach wasn't as effecting as caching in terms of query runtime optimization, showing 0.83 seconds, although it is still lower than runtime on the original uncached table.
+
     
